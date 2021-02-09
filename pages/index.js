@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Current user: <code className={styles.code}>{user.user ? auth.user.email : "None"}</code>
+          Current user: <code className={styles.code}>{auth.user ? auth.user.email : "None"}</code>
           {auth.user ? (
             <button onClick={(e) => auth.signout()}>Sign Out</button>
             ) : (
